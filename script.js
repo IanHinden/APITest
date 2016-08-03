@@ -1,7 +1,7 @@
 function openConnect(){
 	var xhr = new XMLHttpRequest();
-	var city = document.getElementById('city').value;
-	var url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=7f5c20c0575896dc8da770c70446a169';
+	//var city = document.getElementById('city').value;
+	var url = 'https://shiitake-dev.zappos.biz/tag/public/page/0/size/10';
 	
 	xhr.onload = function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
@@ -13,13 +13,13 @@ function openConnect(){
 	function refreshInfo(){
 	document.getElementById('content').innerHTML = newContent;
 	}
-	newContent = 'The temp is ' + responseObject.main.temp + ' and the humidity is ' + responseObject.main.humidity;
-	/*for (var i = 0; i < responseObject.list.length; i++){
-		newContent += '<div class='places'>';
-		newContent += '<p>' + responseObject.list[i].main.temp + '</p>';
+	//newContent = 'The temp is ' + responseObject.main.temp + ' and the humidity is ' + responseObject.main.humidity;
+	for (var i = 0; i < responseObject.payload.length; i++){
+		newContent += '<div class="categories">';
+		newContent += '<p>' + responseObject.payload[i].name + '</p>';
 		newContent += '</div>';
 			}
-	*/
+	
 	refreshInfo();
 	//.getElementById('content').innerHTML = newContent;
 		}
