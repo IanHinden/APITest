@@ -1,0 +1,206 @@
+/* ---------------- custom navigation ---------------- */
+
+.navbar-brand img {
+    margin-top: -8px;
+    height: 40px;
+    float: left;
+}
+
+.tknav-menu > li{
+ 		padding-left:8px;
+ 		list-style: none;
+ 	}
+
+.seperator {
+    border-right: 1px dotted #fff;
+    display: block;
+    padding: 6px 0;
+    margin: -5px 10px 0 10px;
+    float: left;
+}
+
+.tk-navbar-subbrand {
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 24px;
+}
+
+.tk-body {
+    background-color: #e0e0e0;
+    font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.tk-container-block {
+    padding-top: 20px;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    box-shadow: 2px 2px 3px #cccccc;
+}
+
+.tk-navbar {
+    border: none;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ2YmJiZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzRmODFhMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #46bbbe), color-stop(100%, #4f81a3));
+    background-image: -moz-linear-gradient(left, #46bbbe, #4f81a3);
+    background-image: -webkit-linear-gradient(left, #46bbbe, #4f81a3);
+    background-image: linear-gradient(to right, #46bbbe, #4f81a3);
+    color: #fff;
+}
+.tk-navbar a {
+    color: inherit;
+}
+
+.tk-row-collapse, .table > tbody > tr > td.tk-row-collapse {
+    padding: 0px;
+    border: 0px;
+}
+
+.navbar-text {
+    margin-left: 0 !important;
+}
+
+.unrounded {
+    border-radius: 0;
+}
+
+/* All of the CSS related to badges */ 
+
+.badgeDetails {
+  width: 15.66%;
+  overflow: hidden;
+  background: #f5f5f5;
+  position: relative;
+  border-radius: 5px;
+  margin: 15px 2% 15px 0;
+  float: left; }
+  
+  .badgeDetails p {
+    text-align: center;
+    margin: 4%;
+    color: #666; }
+
+  @media (min-width: 992px) {  
+    /* 5 Badges Wide */
+    .badgeDetails {
+      width: calc(92% / 5);
+      margin-bottom: 5px }
+    .badgeDetails:nth-child(5n) {
+      margin-right: 0; } 
+    .badgeDetails:nth-child(5n+1) {
+      clear: both; } }
+      
+  @media (max-width: 991px) {
+    /* 4 Badges Wide */
+    .badgeDetails {
+      width: calc(94% / 4);
+      margin: 15px 2% 15px 0; }
+    .badgeDetails:nth-child(4n) {
+      margin-right: 0; } 
+    .badgeDetails:nth-child(4n+1) {
+      clear: both; } }
+      
+  @media (max-width: 640px) {
+    /* 2 Badges Wide */
+    .badgeDetails {
+      width: calc(98% / 2);
+      margin: 15px 2% 15px 0; }
+    .badgeDetails:nth-child(2n) {
+      margin-right: 0; } 
+    .badgeDetails:nth-child(2n+1) {
+      clear: both; } }
+
+#badges {
+  overflow: hidden }
+
+.smallBadge{
+  width: 100% }
+
+/*# sourceMappingURL=styles.css.map */
+
+body {
+  background-color: #f5f5f5 !important;
+  padding-bottom: 50px; }
+  
+h2 {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 15px;
+  margin: 0;
+  color: #337ab7;
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: .025em; }
+
+.noPadding {
+    padding: 0 !important; }
+
+.h1, .h2, .h3, .h4, h1, h2, h3, h4 {
+  color: #666; }
+
+#searchContainer {
+  margin-top: .5em; }
+  #searchContainer #search {
+    background-image: url("../images/icons/search.svg");
+    background-repeat: no-repeat;
+    background-position: right; }
+
+.navbar-collapse .btn-info{
+  margin-left: 10px;
+}
+
+
+#bio {
+  white-space: pre-line; }
+
+.category-btn.on { background: #fcf8e3; }
+
+.tk-navbar .navbar-toggle { border-color: #ddd; }
+  .tk-navbar .navbar-toggle:hover { background-color:rgba(255, 255, 255, 0.2); }
+  .tk-navbar .navbar-toggle .icon-bar { background-color: #fff; }
+
+#profile-hero-image {
+  max-width: 500px; }
+
+footer {
+  color: #bbb; }
+  footer a {
+    color: inherit;
+    text-decoration: underline; }
+  footer .clear {
+      clear: both;
+      display: block; }
+
+
+/* ---------------- custom sub navigation ---------------- */
+.subnav {
+  padding: 0 !important; }
+  
+  @media (max-width: 991px) {
+    .subnav {
+      text-align: center !important;
+      margin: 0 !important; } }
+      
+  .subnav .btn-link {
+    padding: 0;
+    margin: 5px 0 0 !important; }
+    
+    @media (max-width: 768px) {
+      .subnav .btn-link {
+        margin: 0 0 15px !important; } }
+        
+    .subnav .btn-link a {
+      padding: 10px !important;
+      display: inline-block;
+      color: #666;
+      font-weight: 400; }
+          
+  .subnav a, .subnav a:active, .subnav a:focus, .subnav a:hover {
+    text-decoration: none; }
+    
+  .subnav .btn-link:hover {
+    background: #e8e8e8;
+    border-radius: 10px; }
+    .subnav .btn-link:hover a {
+      color: #666; }
+
+/*# sourceMappingURL=app.css.map*/
